@@ -1,4 +1,4 @@
-package ScalerLLD.Design_Patterns.Singleton;
+package Design_Patterns.Singleton;
 
 public class Client {
     public static void main(String[] args) {
@@ -22,6 +22,9 @@ public class Client {
         // made constructor parameterised
         DBConnect db2 = DBConnect.getInstance(1);
         DBConnect db3 = DBConnect.getInstance(1);
+
+        System.out.println(db2.isConnected());
+        System.out.println(db3.isConnected());
     }
 
 }
