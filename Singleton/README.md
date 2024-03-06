@@ -134,7 +134,7 @@ public class DBConnect {
     }
 
     // double check locks
-    public static synchronized DBConnect getInstance(int connect){
+    public static DBConnect getInstance(int connect){
         
         if(dbinstance==null){
             lock.lock();
